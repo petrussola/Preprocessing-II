@@ -176,12 +176,17 @@ header {
   border-bottom: 2px dashed #C0C0C0;
 }
 header div {
-  padding: 3rem 0;
+  padding: 2.5rem 0;
 }
 header nav {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 40%;
+}
+header nav a {
+  text-decoration: none;
+  color: inherit;
 }
 .footer {
   width: 100%;
