@@ -333,7 +333,6 @@ header nav a {
   display: flex;
   flex-flow: column wrap;
   width: 48%;
-  border: 1px solid red;
 }
 .form-content form div {
   padding: 0.5rem 0 0 0.5rem;
