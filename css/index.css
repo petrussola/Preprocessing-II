@@ -329,16 +329,33 @@ header nav a {
     padding: 1.3rem 0;
   }
 }
+@media (max-width: 500px) {
+  .content-section div {
+    padding: 1rem 0;
+  }
+}
 .form-content {
   display: flex;
   flex-flow: column wrap;
   width: 48%;
+}
+@media (max-width: 500px) {
+  .form-content {
+    width: 100%;
+  }
 }
 .form-content form div {
   padding: 0.5rem 0 0 0.5rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .form-content form div {
+    border: 1px solid red;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
 }
 .form-content form div * {
   padding: 0 0.5rem;
