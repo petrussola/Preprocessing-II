@@ -33,10 +33,14 @@
     
     .img-content {
       width: 48%;
-      @media @mobile {
-        width: 100%;
-      } 
       padding-left: 1%;
+      .animationImage(3s);
+        @media @mobile {
+          width: 100%;
+        } 
+      &:hover {
+        width: 50%;
+      }
 
       img {
         border-radius: 10px;
