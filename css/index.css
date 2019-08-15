@@ -175,6 +175,11 @@ header {
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  header {
+    flex-flow: column wrap;
+  }
+}
 header div {
   padding: 2.5rem 0;
 }
@@ -183,6 +188,11 @@ header nav {
   flex-flow: row wrap;
   justify-content: space-around;
   width: 40%;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+  }
 }
 header nav a {
   text-decoration: none;
