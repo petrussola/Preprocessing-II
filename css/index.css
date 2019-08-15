@@ -329,3 +329,18 @@ header nav a {
     padding: 1.3rem 0;
   }
 }
+.form-content {
+  display: flex;
+  flex-flow: column wrap;
+  width: 48%;
+  border: 1px solid red;
+}
+.form-content form div {
+  padding: 0.5rem 0 0 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.form-content form div * {
+  padding: 0 0.5rem;
+}
