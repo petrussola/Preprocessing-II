@@ -352,7 +352,6 @@ header nav a {
 }
 @media (max-width: 500px) {
   .form-content form div {
-    border: 1px solid red;
     flex-wrap: nowrap;
     width: 100%;
   }
