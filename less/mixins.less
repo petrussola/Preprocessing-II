@@ -1,1 +1,27 @@
 // Mixins in here
+.signupButton(@backgroundColor, @fontColor) {
+    padding: 1.7rem 0;
+    width: 85%;
+    background-color: @backgroundColor;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: @fontColor;
+}
+
+.marginMobileContentSection(@size) {
+    margin-left: @size;
+    margin-right: @size;
+}
+.paddingMobileContentSection(@size) {
+    padding-left: @size;
+    padding-right: @size;
+}
+
+.testRedBorder(){
+    border: 1px solid red;
+}
+
+.animationImage(@duration) {
+    transition: @duration;
+;}

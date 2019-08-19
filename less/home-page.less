@@ -1,21 +1,46 @@
 .home {
 
+  .jumbotron {
+    display: flex;
+    flex-flow: column wrap;
+    @media @mobile {
+      .marginMobileContentSection(@mobileSectionPadding);
+      border-bottom: 2px dashed @silver;
+    }
+    
+    div:nth-of-type(2) {
+      padding-top: 1em;
+    }
+  }
+  
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    @media @mobile {
+      flex-flow: column wrap;
+      .marginMobileContentSection(@mobileSectionPadding);
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      } 
     }
-
+    
     .img-content {
       width: 48%;
       padding-left: 1%;
+      .animationImage(3s);
+        @media @mobile {
+          width: 100%;
+        } 
+      &:hover {
+        width: 50%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +51,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-flow: column-reverse wrap;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -41,6 +69,10 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 100%;
+      .paddingMobileContentSection(@mobileSectionPadding);
+    } 
 
     img {
       border-radius: 10px;
@@ -52,10 +84,26 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-flow: column wrap;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+      }
+      
+      .btn {
+        .signupButton(@eastern-blue, @white);
+        @media @mobile {
+          width: 100%;
+          padding: 1.3rem 0;
+        }
+      }
     }
   }
 }// home
